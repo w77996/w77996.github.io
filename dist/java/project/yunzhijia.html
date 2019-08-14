@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Python实现云之家自动签到 | 七七九九六</title>
+    <meta name="description" content="个人网站">
+    <link rel="icon" href="/logo.jpg">
+    
+    <link rel="preload" href="/assets/css/0.styles.aca50b0a.css" as="style"><link rel="preload" href="/assets/js/app.0cee35f0.js" as="script"><link rel="preload" href="/assets/js/2.78f23174.js" as="script"><link rel="preload" href="/assets/js/9.bfe5ed02.js" as="script"><link rel="prefetch" href="/assets/js/10.fc139a1b.js"><link rel="prefetch" href="/assets/js/11.0c24bb64.js"><link rel="prefetch" href="/assets/js/12.a67458e0.js"><link rel="prefetch" href="/assets/js/13.9c237e8d.js"><link rel="prefetch" href="/assets/js/14.b582099b.js"><link rel="prefetch" href="/assets/js/15.729c2ffd.js"><link rel="prefetch" href="/assets/js/16.c8ac7939.js"><link rel="prefetch" href="/assets/js/17.dbf42153.js"><link rel="prefetch" href="/assets/js/18.c80dbf25.js"><link rel="prefetch" href="/assets/js/19.26f8708c.js"><link rel="prefetch" href="/assets/js/20.278bee0a.js"><link rel="prefetch" href="/assets/js/21.05adcccb.js"><link rel="prefetch" href="/assets/js/22.dca709f8.js"><link rel="prefetch" href="/assets/js/23.af8b2a3e.js"><link rel="prefetch" href="/assets/js/24.ae69e687.js"><link rel="prefetch" href="/assets/js/25.6e9c4eab.js"><link rel="prefetch" href="/assets/js/26.6b382647.js"><link rel="prefetch" href="/assets/js/27.2f508fa3.js"><link rel="prefetch" href="/assets/js/28.52a2c94b.js"><link rel="prefetch" href="/assets/js/3.f08f183e.js"><link rel="prefetch" href="/assets/js/4.1b2928d7.js"><link rel="prefetch" href="/assets/js/5.a80eb1ab.js"><link rel="prefetch" href="/assets/js/6.168d2d4d.js"><link rel="prefetch" href="/assets/js/7.755fd1f5.js"><link rel="prefetch" href="/assets/js/8.5ddf5166.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.aca50b0a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">七七九九六</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Java</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/java/project/" class="nav-link router-link-active">项目</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">服务器</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/server/elasticsearch/" class="nav-link">Elasticsearch</a></li><li class="dropdown-item"><!----> <a href="/server/docker/" class="nav-link">Docker</a></li><li class="dropdown-item"><!----> <a href="/server/mysql/" class="nav-link">Mysql</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/miniapp/" class="nav-link">小程序</a></li><li class="dropdown-item"><!----> <a href="/web/vue/" class="nav-link">Vue</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/w77996" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Java</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/java/project/" class="nav-link router-link-active">项目</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">服务器</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/server/elasticsearch/" class="nav-link">Elasticsearch</a></li><li class="dropdown-item"><!----> <a href="/server/docker/" class="nav-link">Docker</a></li><li class="dropdown-item"><!----> <a href="/server/mysql/" class="nav-link">Mysql</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/miniapp/" class="nav-link">小程序</a></li><li class="dropdown-item"><!----> <a href="/web/vue/" class="nav-link">Vue</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/w77996" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>项目</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/java/project/hi-straw.html" class="sidebar-link">稻草人图床神器小程序后台</a></li><li><a href="/java/project/yunzhijia.html" class="active sidebar-link">Python实现云之家自动签到</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="python实现云之家自动签到"><a href="#python实现云之家自动签到" aria-hidden="true" class="header-anchor">#</a> Python实现云之家自动签到</h1> <h3 id="起因"><a href="#起因" aria-hidden="true" class="header-anchor">#</a> 起因</h3> <p>偶然看到一个同事设置闹钟，提醒自己下班打开。就突发奇想，既然身为后台开发是不是可以用程序来实现自动打卡的功能呢？
+于是开起来fiddler进行抓包，发现设置代理，云之家无法进行签到功能。既然电脑无法进行代理，那我直接在手机上开启个代理应用进行抓包不就行了么？</p> <h3 id="接口分析"><a href="#接口分析" aria-hidden="true" class="header-anchor">#</a> 接口分析</h3> <p>最后抓到的结果签到接口</p> <p><img src="https://github.com/w77996/BlogsImage/blob/master/python_yunzhijia/1565155502.jpg?raw=true" alt="image"></p> <p>分析下接口</p> <ul><li>域名：<code>www.yunzhijia.com</code></li> <li>接口：<code>/attendance-signapi/signservice/sign/signIn h2</code></li> <li>请求方式：<code>POST</code></li> <li>请求参数<br> <code>lng=纬度&amp;lat=精度&amp;bssid=&amp;configId=配置ID&amp;networkId=网络ID&amp;userId=用户ID&amp;ssid=</code></li> <li>请求头部<br>
+1.user-agent<br>
+2.opentoken<br>
+3.authorization<br>
+4.content-type<br>
+5.accept-language</li></ul> <p>试着请求了一下
+<img src="https://raw.githubusercontent.com/w77996/BlogsImage/master/python_yunzhijia/1565156178.jpg" alt="image"></p> <h3 id="编码"><a href="#编码" aria-hidden="true" class="header-anchor">#</a> 编码</h3> <p>试了一下将获取的接口直接请求，云之家并没有对token的时间进行限制，所以拿到请求参数后可以直接撸代码了。
+考虑了一下java代码的繁重，最后决定用python来完成自动签到的功能。
+本来还用vue+axios写了一个网页版，但是后面发现axios总是会发送一个option请求导致返回错误，最后就没有去实现了。</p> <p>python主要用到了三个库:</p> <ul><li>requests</li> <li>json</li> <li>apscheduler</li></ul> <p>apscheduler作为定时器实现自动签到的功能</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>import requests
+import json
+from apscheduler.schedulers.blocking import BlockingScheduler
+
+
+# 簽到
+def sign_in():
+    url = &quot; http://www.yunzhijia.com/attendance-signapi/signservice/sign/signIn?lng=&amp;bssid=&amp;configId=&amp;networkId=&amp;userId=&amp;ssid=&amp;lat=&quot;
+    headers = {
+        &quot;user-agent&quot;: &quot;&quot;,
+        &quot;opentoken&quot;: &quot;&quot;,
+        &quot;authorization&quot;: &quot;&quot;,
+        &quot;accept-language&quot;:&quot;&quot;,
+    }
+
+    response = requests.post(url, headers=headers)
+    print(response.text)
+    response_json = json.loads(response.text)
+    print(response_json['success'])
+
+
+
+def job():
+    sched = BlockingScheduler()
+    sched.add_job(sign_in, 'cron', hour=18, minute=0)
+    sched.add_job(sign_in, 'cron', hour=9, minute=0)
+    sched.start()
+
+
+if __name__ == '__main__':
+    job()
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br></div></div><h3 id="结尾"><a href="#结尾" aria-hidden="true" class="header-anchor">#</a> 结尾</h3> <p>此代码仅供学习用，我自己写完这个代码后也没有用过，平时也是准点上下班，希望大家不要随意使用，如有侵权问题请联系，随时删除。</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">8/13/2019, 7:59:09 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/java/project/hi-straw.html" class="prev">
+          稻草人图床神器小程序后台
+        </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.0cee35f0.js" defer></script><script src="/assets/js/2.78f23174.js" defer></script><script src="/assets/js/9.bfe5ed02.js" defer></script>
+  </body>
+</html>
